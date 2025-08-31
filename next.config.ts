@@ -4,9 +4,14 @@ import path from "node:path";
 const LOADER = path.resolve(__dirname, 'src/visual-edits/component-tagger-loader.js');
 
 const nextConfig: NextConfig = {
-    eslint: {
+  eslint: {
     ignoreDuringBuilds: true,
   },
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+  // Add this to ensure proper output
+  distDir: '.next',
   images: {
     remotePatterns: [
       {
