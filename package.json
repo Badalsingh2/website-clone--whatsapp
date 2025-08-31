@@ -8,7 +8,7 @@
         "start": "next start",
         "lint": "next lint",
         "vercel-build": "npm run build"
-      }
+      },
     "dependencies": {
         "@babel/parser": "^7.28.0",
         "@headlessui/react": "^2.2.7",
